@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title> IDN Boarding School</title>
+    <script>
+        window.addEventListener("load", () => 
+        {
+            const loader = document.querySelector(".loader")
+            loader.classList.add("loader--hidden");
+            loader.addEventListener("transitionend", () =>{
+                document.body.removeChild(loader);
+            })
+            
+        });
+
+        
+    </script>
+</head>
+<body>
+
+    <div class="loader"> </div>
+
+    <header> 
+    <div class="navbar">
+        <div class="logo"> <a href="#"> IDN </a></div>
+        <ul class="links">
+            <li><a href="#home"> IDN </a></li>
+            <li><a href="#about"> About </a></li>
+            <li><a href="#extra"> Extracuricullum </a></li>
+            <li><a href="#achievements"> Achievements </a></li>
+            <li><a href="#contact"> Contact </a></li>
+        </ul>
+        <a href="#" class="action_btn"> Get Started </a>
+        <div class="toggle_btn">
+            <i class='bx bx-menu-alt-right'></i>
+        </div>
+    </div>
+
+    <div class="dropdown_menu">
+        <li><a href="#home"> IDN </a></li>
+            <li><a href="#about"> About </a></li>
+            <li><a href="#extra"> Extracuricullum </a></li>
+            <li><a href="#achievements"> Achievements </a></li>
+            <li><a href="#contact"> Contact </a></li>
+            <li> <a href="#" class="action_btn"> Get Started </a></li>
+    </div>
+</header>
+ <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon =document.querySelector('.toggle_btn i')
+        const dropDownMenu =document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function (){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classLis.contains('open')
+
+            toggleBtnIcon.classList= isOpen
+            ? 'bx bx-x'
+            : 'bx bx-menu-alt-right'
+        }
+ </script>
+<section class="home" id="home">
+    <div class="home-content">
+        <h1> Welcome To IDN Boarding School </h1>
+        <p> Ingin anak anda menjadi   <span class="multiple-text"> </span> </p>
+        <a href="daftar.html" class="btn"> Daftar Sekarang! </a>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h1 class="heading"> Program - Program <span>IDN</span></h1>
+
+    <div class="about-container">
+        <div class="s-box">
+            <i class='bx bx-code-alt' id="code"></i> <h2> Program SMK RPL (Rekayasa Perangkat Lunak)</h2>
+            <h3> Program 3 Tahun (2 tahun belajar + 1 tahun PKL) <br> Memprogramm web dan mengembangkan <br> Membuat aplikasi android </h3>
+            <p> Contoh Pembelajaran: <br> 1. Belajar HTML Dasar > <a href="https://www.youtube.com/watch?v=tVBuw-RkUU4"> Lihat Video </a> <br> 2. Belajar CSS Dasar  > <a href="https://www.youtube.com/watch?v=r9xO1ZafoW4">  Lihat Video </a> <br> 3. Belajar Membuat Web dengan HTML & CSS > <a href="https://www.youtube.com/watch?v=zJE-ze4TfXc"> Lihat Video </a></p>
+        </div>
+
+        <div class="s-box">
+            <i class='bx bx-broadcast' id="code"></i> <h2> Program SMK TKJ (Teknik Komputer dan Jaringan) </h2>
+            <h3> Program 3 Tahun (2 Tahun belajar + 1 Tahun PKL) <br> Mempelajari Jaringan Komputer (Cisco & Mikrotik) <br> Mempelajari Cloud Server </h3>
+            <p> Contoh Pembelajaran: <br> 1. Belajar Cisco > <a href="https://www.youtube.com/watch?v=ToDChOtwoGs"> Lihat Video </a> <br> 2. Belajar Mikrotik > <a href="https://www.youtube.com/watch?v=op1wIDzJz3Y">  Lihat Video </a> <br> 3. Belajar Linux Server > <a href="https://www.youtube.com/watch?v=yofSTk5Ao1A"> Lihat Video </a></p>
+        </div>
+
+        <div class="s-box">
+            <i class='bx bxs-brush' id="code" ></i> <h2> Program SMK DKV (Design Komunikasi Visual) </h2>
+            <h3> Program 3 Tahun (2 Tahun belajar + 1 tahun PKL) <br> Mempelajari UI/UX Design <br> Mempelajari Design Grafis <br> Mempelajari Multimedia </h3>
+            <p> Contoh Pembelajaran: <br> 1. Membuat aplikasi mobile dengan Figma > <a href="https://www.youtube.com/watch?v=0JeyMBOPLqw"> Lihat Video</a> <br> 2. Membuat aplikasi web dengan Figma <a href="https://www.youtube.com/watch?v=45qXoshwFqk"> Lihat Video </a></p>
+        </div>
+        <div class="s-box">
+            <h2> Program Tahfidz </h2>
+            <h3> Program Tahfidz ini mempersiapkan calon calon santri menjadi lebih baik di dunia dan akhirat. Sesuai dengan slogan kami "Jagoan IT Pinter Ngaji!".</h3>
+        </div>
+
+        <div class="s-box">
+            <h2> Program English Day</h2>
+            <h3> Di IDN, Program English Day sangat di tekankan agar santri bisa belajar berbicara bahasa Inggris sesama teman dan guru.</h3>
+        </div>
+    </div>
+</section>
+   
+<section class="extra" id="extra">
+    <h1 class="heading"> IDN <span>Extracuricullum</span> </h1>
+
+    <div class="extra-container">
+        <div class="extra-box">
+            <img src="img/swimming.jpg">
+            <div class="extra-layer">
+                <h4> Swimming </h4>
+            </div>
+        </div>
+
+        <div class="extra-box">
+            <img src="img/muay1.jpg">
+            <div class="extra-layer">
+                <h4> Muay Thai </h4>
+            </div>
+        </div>
+
+        <div class="extra-box">
+            <img src="img/futsal.jpg">
+            <div class="extra-layer">
+                <h4> Futsal </h4>
+            </div>
+        </div>
+
+        <div class="extra-box">
+            <img src="img/kuda.jpg">
+            <div class="extra-layer">
+                <h4> Horse Riding</h4>
+            </div>
+        </div>
+
+        <div class="extra-box">
+            <img src="img/cooking.jpg">
+            <div class="extra-layer">
+                <h4> Cooking Class </h4>
+            </div>
+        </div>
+
+        <div class="extra-box">
+            <img src="img/stadium.jpg">
+            <div class="extra-layer">
+                <h4> Stadium General</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="achievements" id="achievements">
+    <h1 class="heading"> Students <span> Achievements </span></h1>
+
+    <div class="ach-container">
+        <div class="ach-box">
+            <img src="img/dicoding.jpg">
+            <div class="ach-layer">
+                <h4> Dicoding Certificate </h4>
+            </div>
+        </div>
+
+        <div class="ach-box">
+            <img src="img/dicoding2.jpg">
+            <div class="ach-layer">
+                <h4> Dicoding Certificate </h4>
+            </div>
+        </div>
+
+        <div class="ach-box">
+            <img src="img/dicoding3.jpg">
+            <div class="ach-layer">
+                <h4> Dicoding Certificate </h4>
+            </div>
+        </div>
+
+        <div class="ach-box">
+            <img src="img/dicoding4.jpg">
+            <div class="ach-layer">
+                <h4> Dicoding Certificate </h4>
+            </div>
+        </div>
+
+        <div class="ach-box">
+            <img src="img/dociding1.jpg">
+            <div class="ach-layer">
+                <h4> Dicoding Certificate </h4>
+            </div>
+        </div>
+
+        <div class="ach-box">
+            <img src="img/Dicoding Setifikat.jpg">
+            <div class="ach-layer">
+                <h4> Dicoding Certificate </h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="heading"> Contact Us </h2>
+    <div class="content">
+        <div class="card">
+            <div class="icon">
+                <i class='bx bxl-whatsapp' ></i>
+            </div>
+            <div class="info">
+                <h3> Whatsapp </h3>
+                <p> 0822-1010-2006</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <i class='bx bxl-instagram-alt' ></i>
+            </div>
+            <div class="info">
+                <h3> Instagram </h3>
+                <p> <a href="https://www.instagram.com/idnboardingschoolpmjbogor/"> @idnboardingschoolpmjbogor </a></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <i class='bx bxl-facebook-circle' ></i>
+            </div>
+            <div class="info">
+                <h3> Facebook </h3>
+                <p> <a href="https://www.facebook.com/idnboardingschool"> @idnboardingschool </a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <h2 class="footer-title"> Copyright &copy; IDN Boarding School Pamijahan Bogor 2023</h2>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    // typed js
+const typed = new Typed('.multiple-text',{
+    strings:[' Leader?',' English Professional?',' Pinter Ngaji?',''],
+    typeSpeed:35,
+    backSpeed:35,
+    backDelay:100,
+    loop:true,
+
+})
+</script>
+</body>
+</html>
